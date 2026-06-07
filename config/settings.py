@@ -100,15 +100,23 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "bitshare",
+#         "USER": "bitshare",
+#         "PASSWORD": "bitshare",
+#         "HOST": "localhost",
+#         "PORT": "5432",
+#     }
+# }
+
+import dj_database_url
+
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "bitshare",
-        "USER": "bitshare",
-        "PASSWORD": "bitshare",
-        "HOST": "localhost",
-        "PORT": "5432",
-    }
+    "default": dj_database_url.config(
+        default="postgresql://bitshare:bitshare@localhost:5432/bitshare"
+    )
 }
 
 
