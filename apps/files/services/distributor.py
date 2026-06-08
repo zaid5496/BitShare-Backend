@@ -54,4 +54,5 @@ def distribute_file(file_obj):
     file_obj.is_distributed = True
     file_obj.save(update_fields=["is_distributed"])
 
-    remove_original_file.delay(file_obj.id)
+    # remove_original_file.delay(file_obj.id)
+    remove_original_file(file_obj.id)
