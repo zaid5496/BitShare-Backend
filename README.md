@@ -67,19 +67,27 @@ Django REST API
 
 * Django
 * Django REST Framework
+* Celery
 * Simple JWT
 
 ### Database
 
-* PostgreSQL (Supabase)
+* PostgreSQL
+* Supabase PostgreSQL
 
 ### Storage
 
 * Supabase Storage
 
-### Background Processing
+### Messaging & Task Queue
 
-* Celery (planned for production deployment)
+* Redis
+
+### Deployment
+
+* Render
+* Supabase
+
 
 ---
 
@@ -226,6 +234,17 @@ npm run dev
 * Cloud Object Storage Integration
 
 ---
+
+## Live Demo
+
+🚀 Frontend: https://bitshare-frontend-weld.vercel.app/
+
+🔗 Backend API: https://bitshare-backend.onrender.com/
+
+### Demo Credentials
+
+You can create an account or use the guest upload feature to test the platform.
+
 
 ## Author
 
